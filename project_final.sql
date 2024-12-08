@@ -3,8 +3,7 @@ CREATE DATABASE FoodDonationDB;
 
 USE FoodDonationDB;
 
-DROP USER 'admin_user'@'root';
-CREATE USER 'admin_user'@'root' IDENTIFIED BY 'Akshayksi@007';
+CREATE USER 'admin_user'@'root' IDENTIFIED BY 'your_password';
 GRANT ALL PRIVILEGES ON FoodDonationDB.* TO 'admin_user'@'root';
 
 -- Table: User
@@ -20,7 +19,7 @@ CREATE TABLE User (
     CONSTRAINT chk_phone_format CHECK (phone_number REGEXP '^[0-9]{10,15}$')
 );
 
-SET @hashed_password = SHA2('Akshayksi@007', 256);
+SET @hashed_password = SHA2('your_password', 256);
 
 INSERT INTO User (username, email, password_hash, phone_number, role)
 VALUES ('admin_user', 'admin_user@root.com', @hashed_password, '9876543210', 'Admin');
