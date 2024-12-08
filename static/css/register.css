@@ -1,0 +1,128 @@
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+/* Main Content */
+main {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 2rem auto;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Register Page Styling */
+.register-container {
+    max-width: 400px; /* Reduced width to match login form */
+    margin: 30px auto;
+    padding: 20px; /* Adjusted padding */
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.register-container h2 {
+    margin-bottom: 15px; /* Reduced margin */
+    font-size: 1.8rem; /* Adjusted heading size */
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+.register-container form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.register-container form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.register-container form input,
+.register-container form select {
+    padding: 12px; /* Adjusted padding */
+    margin-bottom: 15px; /* Reduced margin */
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem; /* Adjusted font size */
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.register-container form input:focus,
+.register-container form select:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+.register-container form button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px; /* Adjusted padding for buttons */
+    border-radius: 5px;
+    font-size: 1rem; /* Adjusted button text size */
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+}
+
+.register-container form button:hover {
+    background-color: #45a049;
+}
+
+.register-container p {
+    margin-top: 15px; /* Reduced margin */
+    font-size: 0.9rem;
+}
+
+.register-container p a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.register-container p a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .register-container {
+        width: 95%; /* Adjust width for smaller screens */
+    }
+}

@@ -1,0 +1,106 @@
+/* Container Spacing */
+main {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Container Spacing */
+main {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 1rem;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Modern shadow effect */
+    overflow: hidden;
+    border-radius: 8px; /* Rounded corners */
+}
+
+/* Table Header Styling */
+thead th {
+    background-image: linear-gradient(120deg, #4caf50, #81c784); /* Gradient header for a modern look */
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 12px;
+    border: none; /* No border for modern appearance */
+    font-size: 1.1rem;
+}
+
+/* Alternating Row Colors for Better Readability */
+tbody tr:nth-child(even) {
+    background-color: #f3f3f3; /* Light grey for even rows */
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #ffffff; /* White for odd rows */
+}
+
+/* Table Cell Styling */
+tbody td {
+    padding: 15px;
+    font-weight: 500;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+    text-align: center; /* Aligns text in the center of cells */
+}
+
+/* Highlight Hover Effect for Rows */
+tbody tr:hover {
+    background-color: #c8e6c9; /* Soft green hover effect */
+    cursor: pointer; /* Indicates interactivity */
+}
+
+/* Table Borders and Row Styles */
+table th, table td {
+    border: 1px solid #4caf50; /* Green borders for consistency */
+    text-align: center;
+}
+
+/* Header Styling */
+header h1 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Add some spacing between table and footer */
+main {
+    margin-bottom: 20px;
+}
+
+/* Responsive Styling for Smaller Screens */
+@media (max-width: 768px) {
+    table {
+        font-size: 0.9rem;
+    }
+
+    tbody td {
+        padding: 10px;
+    }
+}
+
+/* Footer Styling */
+footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.9rem;
+    margin-top: auto;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+

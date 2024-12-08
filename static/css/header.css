@@ -1,0 +1,64 @@
+/* General Header Styling */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 0; /* Consistent padding for all pages */
+    position: relative;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+/* Header Container */
+.header-container {
+    display: flex;
+    justify-content: space-between; /* Ensures the title and nav links align properly */
+    align-items: center; /* Vertically aligns items */
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 15px; /* Adds consistent spacing on the sides */
+}
+
+/* Title */
+header h1 {
+    margin: 0;
+    font-size: 2rem; /* Set font size to maintain uniformity */
+    font-weight: bold;
+    text-align: left; /* Ensures the title aligns properly */
+}
+
+/* Navigation Styling */
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1.5rem; /* Adds consistent spacing between links */
+}
+
+/* Navigation Items */
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+header nav ul li a:hover {
+    background-color: #3e8e41;
+}
+
+/* Responsive Header */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+}

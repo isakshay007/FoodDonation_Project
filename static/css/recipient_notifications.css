@@ -1,0 +1,51 @@
+/* Container Styling */
+.notifications-container {
+    margin: 20px auto;
+}
+
+/* Notifications List Styling */
+.list-group-item {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 15px;
+}
+
+.list-group-item .fw-bold {
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.list-group-item span {
+    font-size: 0.9rem;
+    color: #777;
+}
+
+/* Header Styling */
+header h1 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Card Header Styling */
+.card-header h2 {
+    font-size: 1.8rem;
+}
+
+/* Footer Styling */
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .card {
+        margin: 10px;
+    }
+
+    .list-group-item {
+        padding: 10px;
+    }
+}

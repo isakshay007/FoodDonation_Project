@@ -1,0 +1,122 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header Styling */
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Main Content Styling */
+main {
+    flex-grow: 1;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Introductory Text */
+main p {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 1rem;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Modern shadow effect */
+    overflow: hidden;
+    border-radius: 8px; /* Rounded corners */
+}
+
+/* Table Header Styling */
+thead th {
+    background-image: linear-gradient(120deg, #4caf50, #81c784); /* Gradient header for a modern look */
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 12px;
+    border: none; /* No border for modern appearance */
+    font-size: 1.1rem;
+}
+
+/* Alternating Row Colors for Better Readability */
+tbody tr:nth-child(even) {
+    background-color: #f3f3f3; /* Light grey for even rows */
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #ffffff; /* White for odd rows */
+}
+
+/* Table Cell Styling */
+tbody td {
+    padding: 15px;
+    font-weight: 500;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+    text-align: center; /* Aligns text in the center of cells */
+}
+
+/* Highlight Hover Effect for Rows */
+tbody tr:hover {
+    background-color: #c8e6c9; /* Soft green hover effect */
+    cursor: pointer; /* Indicates interactivity */
+}
+
+/* Table Borders and Row Styles */
+table th, table td {
+    border: 1px solid #4caf50; /* Green borders for consistency */
+    text-align: center;
+}
+
+/* Radio Button Styling */
+tbody td input[type="radio"] {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    height: 50px; /* Fixed height for the footer */
+    padding: 0; /* Remove extra padding */
+    font-size: 0.8rem; /* Reduce font size */
+    display: flex;
+    align-items: center; /* Vertically center the text */
+    justify-content: center; /* Horizontally center the text */
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+

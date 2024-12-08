@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block title %}Register - Food Donation Management{% endblock %}
+
+{% block header %}
+<header class="bg-success text-white py-3 text-center">
+    <h1>Food Donation Management</h1>
+</header>
+{% endblock %}
+
+{% block content %}
+<div class="register-container">
+    <h2>Register</h2>
+    <form method="post" action="{{ url_for('register') }}">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" placeholder="Enter your username" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+        <label for="role">Registering as:</label>
+        <select id="role" name="role" required>
+            <option value="" disabled selected>Select an option</option>
+            <option value="Donor">Donor</option>
+            <option value="Recipient">Recipient</option>
+        </select>
+
+        <button type="submit">Register</button>
+    </form>
+    <p>Already have an account? <a href="{{ url_for('login') }}">Login here</a></p>
+</div>
+{% endblock %}

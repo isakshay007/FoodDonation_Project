@@ -1,0 +1,22 @@
+/* Responsive Design */
+@media (max-width: 768px) {
+    header .header-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header nav {
+        position: static;
+        transform: none;
+        margin-top: 10px;
+    }
+
+    main {
+        padding: 1rem;
+    }
+
+    .home-page .buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

@@ -1,0 +1,105 @@
+/* General Header Styling */
+header {
+    background-color: #4CAF50; /* Default green background */
+    color: white; /* White text color */
+    padding: 1.5rem 0; /* Top and bottom padding */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    position: sticky; /* Makes header stick at the top */
+    top: 0; /* Ensures it stays at the top */
+    z-index: 1000; /* Ensures the header is always on top */
+}
+
+/* Container */
+.header-container {
+    display: flex;
+    justify-content: space-between; /* Space between title and navigation */
+    align-items: center; /* Aligns items vertically */
+    max-width: 1200px; /* Restricts width for better layout */
+    margin: 0 auto; /* Centers the container */
+    padding: 0 1rem; /* Adds horizontal padding */
+}
+
+/* Title Styling */
+header h1 {
+    font-size: 2rem; /* Font size for title */
+    font-weight: bold; /* Makes the title bold */
+    margin: 0; /* Removes default margin */
+    text-align: center; /* Centers the title */
+}
+
+/* Navigation Styling */
+header nav ul {
+    list-style: none; /* Removes bullets */
+    display: flex; /* Makes navigation links horizontal */
+    gap: 1rem; /* Space between navigation items */
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+}
+
+header nav ul li {
+    margin: 0; /* Removes list item margin */
+}
+
+header nav ul li a {
+    color: white; /* White link text */
+    text-decoration: none; /* Removes underline */
+    font-weight: bold; /* Boldens the links */
+    padding: 0.5rem 1rem; /* Adds padding for clickability */
+    border-radius: 4px; /* Rounds corners */
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+/* Hover Effects for Links */
+header nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Light white overlay on hover */
+    transform: scale(1.05); /* Slightly enlarges on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column; /* Stacks title and navigation */
+        text-align: center; /* Centers text for smaller devices */
+    }
+
+    header nav ul {
+        flex-direction: column; /* Stacks navigation links */
+        gap: 0.5rem; /* Reduces gap between links */
+    }
+
+    header nav ul li a {
+        display: block; /* Makes links occupy full width */
+        text-align: center; /* Centers link text */
+        padding: 0.8rem; /* Increases padding for better clickability */
+    }
+}
+
+/* Flexbox Layout for Footer at Bottom */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the body is at least the full viewport height */
+    margin: 0; /* Remove default body margin */
+}
+
+/* Footer Styling */
+footer {
+    background-color: #4CAF50; /* Match theme color */
+    color: white; /* White text for footer */
+    text-align: center; /* Center-align the text */
+    padding: 10px 0; /* Add padding for better spacing */
+    font-size: 0.9rem;
+    margin-top: auto; /* Push footer to the bottom of the page */
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+form .form-label {
+    margin-bottom: 8px;
+}
+
+form .form-control {
+    text-align: left; /* Ensure text input aligns left */
+}

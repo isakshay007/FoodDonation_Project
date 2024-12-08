@@ -1,0 +1,79 @@
+/* Organization Container Styling */
+.org-container {
+    max-width: 500px; /* Limit container width */
+    margin: 0 auto; /* Center the container */
+    padding: 20px; /* Add padding */
+    background-color: white; /* Background color */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Form Header Styling */
+.org-container h2 {
+    font-size: 1.8rem; /* Adjust header font size */
+    font-weight: bold; /* Bold header text */
+    color: #4CAF50; /* Success green color */
+    margin-bottom: 1.5rem; /* Add spacing below header */
+}
+
+/* Form Label Styling */
+form .form-label {
+    font-size: 1rem; /* Adjust label font size */
+    font-weight: bold; /* Bold labels */
+    color: #333; /* Darker text for labels */
+}
+
+/* Input Fields Styling */
+form .form-control {
+    border: 2px solid #4CAF50; /* Green border for inputs */
+    border-radius: 5px; /* Rounded corners for inputs */
+    font-size: 1rem; /* Adjust font size */
+}
+
+/* Submit Button Styling */
+form .btn-success {
+    font-size: 1rem; /* Adjust font size */
+    padding: 10px; /* Add padding */
+    border-radius: 8px; /* Rounded corners */
+    transition: all 0.3s ease-in-out; /* Smooth transition for hover effect */
+}
+
+form .btn-success:hover {
+    background-color: #45a049; /* Darker green on hover */
+    color: white; /* White text color on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .org-container {
+        width: 90%; /* Adjust container width for smaller screens */
+        padding: 15px; /* Reduce padding for smaller screens */
+    }
+
+    form .form-control {
+        font-size: 0.9rem; /* Adjust font size for smaller screens */
+    }
+}
+
+/* Flexbox Layout for Footer at Bottom */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the body is at least the full viewport height */
+    margin: 0; /* Remove default body margin */
+}
+
+/* Footer Styling */
+footer {
+    background-color: #4CAF50; /* Match theme color */
+    color: white; /* White text for footer */
+    text-align: center; /* Center-align the text */
+    padding: 10px 0; /* Add padding for better spacing */
+    font-size: 0.9rem;
+    margin-top: auto; /* Push footer to the bottom of the page */
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}

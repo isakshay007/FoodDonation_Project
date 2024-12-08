@@ -1,0 +1,35 @@
+/* Footer Styling */
+footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1.5rem 0; /* Increased padding for better spacing */
+    margin-top: 3rem; /* Adjusted margin for consistent spacing across pages */
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for a floating effect */
+    font-size: 0.9rem; /* Slightly smaller font size for a clean look */
+}
+
+footer p {
+    margin: 0;
+    font-weight: 500; /* Adds slight emphasis to the text */
+}
+
+/* Link Styling (Optional) */
+footer a {
+    color: #d4edda;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: #ffffff; /* Transition to white on hover */
+    text-decoration: underline;
+}
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+    footer {
+        font-size: 0.8rem; /* Adjust font size for smaller screens */
+        padding: 1rem 0;
+    }
+}

@@ -1,0 +1,40 @@
+/* Card Container Styling */
+.card {
+    border: none;
+    border-radius: 8px;
+}
+
+/* Form Labels */
+.form-label {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Form Inputs */
+.form-control,
+.form-select {
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+/* Submit Button */
+.btn-success {
+    background-color: #4CAF50;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-success:hover {
+    background-color: #45a049;
+}
+
+/* Header Styling */
+header {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer Styling */
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}

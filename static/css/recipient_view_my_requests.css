@@ -1,0 +1,90 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+/* Card Styling */
+.card {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+}
+
+/* Card Header */
+.card-header {
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+/* Table Styling */
+.table {
+    margin: 0;
+    font-size: 1rem;
+    text-align: center;
+    color: #333;
+    border-radius: 8px;
+    overflow: hidden;
+    border-collapse: collapse;
+}
+
+/* Table Header Styling */
+.table th {
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    padding: 12px;
+    background-color: #4caf50;
+    color: white;
+}
+
+/* Alternating Row Colors for Better Readability */
+.table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.table tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+/* Table Cell Styling */
+.table td {
+    padding: 10px;
+    font-weight: 500;
+    border: 1px solid #ddd;
+}
+
+/* Highlight Hover Effect for Rows */
+.table tbody tr:hover {
+    background-color: #e8f5e9;
+    cursor: pointer;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    height: 50px; /* Fixed height for the footer */
+    padding: 0; /* Remove extra padding */
+    font-size: 0.8rem; /* Reduce font size */
+    display: flex;
+    align-items: center; /* Vertically center the text */
+    justify-content: center; /* Horizontally center the text */
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .table {
+        font-size: 0.9rem;
+    }
+
+    .table td {
+        padding: 8px;
+    }
+}

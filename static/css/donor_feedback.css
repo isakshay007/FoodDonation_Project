@@ -1,0 +1,115 @@
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure full viewport height */
+    margin: 0; /* Remove default body margin */
+}
+
+/* Header Styling */
+header h1 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Container Spacing */
+main {
+    flex-grow: 1; /* Allow the main content to expand and push the footer down */
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 1rem;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    overflow: hidden;
+    border-radius: 8px; /* Rounded corners */
+}
+
+/* Table Header Styling */
+thead th {
+    background-image: linear-gradient(120deg, #4caf50, #81c784); /* Gradient header for a modern look */
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 12px;
+    border: none;
+    font-size: 1.1rem;
+}
+
+/* Alternating Row Colors for Better Readability */
+tbody tr:nth-child(even) {
+    background-color: #f3f3f3; /* Light grey for even rows */
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #ffffff; /* White for odd rows */
+}
+
+/* Table Cell Styling */
+tbody td {
+    padding: 15px;
+    font-weight: 500;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+/* Highlight Hover Effect for Rows */
+tbody tr:hover {
+    background-color: #c8e6c9; /* Soft green hover effect */
+    cursor: pointer; /* Indicates interactivity */
+}
+
+/* Table Borders and Row Styles */
+table th, table td {
+    border: 1px solid #4caf50; /* Green borders for consistency */
+    text-align: center;
+}
+
+/* Center alignment for messages */
+.text-center {
+    font-size: 1.2rem;
+    color: #4CAF50;
+    margin-top: 50px;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    height: 50px; /* Fixed height for the footer */
+    padding: 0; /* Remove extra padding */
+    font-size: 0.8rem; /* Reduce font size */
+    display: flex;
+    align-items: center; /* Vertically center the text */
+    justify-content: center; /* Horizontally center the text */
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* Responsive Styling for Smaller Screens */
+@media (max-width: 768px) {
+    table {
+        font-size: 0.9rem;
+    }
+
+    tbody td {
+        padding: 10px;
+    }
+}

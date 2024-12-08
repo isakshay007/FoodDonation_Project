@@ -1,0 +1,83 @@
+/* Admin Container Styling */
+.recipient-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Admin Menu Header Styling */
+.recipient-container h2 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-size: 1.8rem;
+    color: #333;
+}
+
+/* Menu List Styling */
+.menu-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+/* Menu Item Styling */
+.menu-list li {
+    margin: 15px 0;
+}
+
+/* Menu Button Styling */
+.menu-list a {
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+/* Welcome Message Styling */
+.welcome-message {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #4CAF50;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Button Hover Effect */
+.menu-list a:hover {
+    color: white;
+    background-color: #4CAF50;
+}
+
+/* Flexbox Layout for Footer at Bottom */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the body is at least the full viewport height */
+    margin: 0; /* Remove default body margin */
+}
+
+/* Footer Styling */
+footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.9rem;
+    margin-top: auto;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .recipient-container {
+        width: 90%;
+        padding: 15px;
+        box-shadow: none;
+    }
+}

@@ -1,0 +1,112 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+/* Card Styling */
+.card {
+    border-radius: 10px; /* Smooth rounded corners */
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Elevated shadow for prominence */
+    background-color: #ffffff; /* Clean white background for better contrast */
+}
+
+/* Card Header */
+.card-header {
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+/* Form Label Styling */
+.form-label {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #333;
+}
+
+/* Dropdown Styling */
+.form-select {
+    border-radius: 5px;
+    border: 1px solid #198754;
+    font-size: 1rem;
+    padding: 10px;
+    color: #333;
+    background-color: #f9f9f9; /* Subtle background */
+    transition: all 0.3s ease;
+}
+
+.form-select:hover {
+    background-color: #e8f5e9; /* Slight green tint on hover */
+    border-color: #4caf50; /* Match the theme */
+}
+
+/* Button Styling */
+.btn-success {
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 12px;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-success:hover {
+    background-color: #388e3c; /* Darker green for hover */
+    color: white;
+}
+
+/* Card Margin */
+.card {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    height: 50px; /* Fixed height for the footer */
+    padding: 0; /* Remove extra padding */
+    font-size: 0.8rem; /* Reduce font size */
+    display: flex;
+    align-items: center; /* Vertically center the text */
+    justify-content: center; /* Horizontally center the text */
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* Improved Center Alignment */
+.card-body {
+    padding: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .form-label {
+        font-size: 1rem;
+    }
+
+    .btn-success {
+        font-size: 1rem;
+    }
+}
+
+/* Footer Styling */
+footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    height: 50px; /* Fixed height for the footer */
+    padding: 0; /* Remove extra padding */
+    font-size: 0.8rem; /* Reduce font size */
+    display: flex;
+    align-items: center; /* Vertically center the text */
+    justify-content: center; /* Horizontally center the text */
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}

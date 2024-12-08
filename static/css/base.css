@@ -1,0 +1,231 @@
+/* Base Styles */
+
+/* Color Variables */
+:root {
+    --primary-color: #28a745; /* Bootstrap primary */
+    --secondary-color: #6c757d; /* Bootstrap secondary */
+    --background-color: #f8f9fa; /* Light background */
+    --text-color: #343a40; /* Dark text */
+    --header-bg: #28a745;
+    --footer-bg: #343a40;
+    --white: #ffffff;
+    --danger-color: #dc3545; /* Bootstrap danger */
+    --success-color: #28a745; /* Bootstrap success */
+}
+
+/* Reset and Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+/* Container */
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+/* Header */
+header {
+    background-color: var(--header-bg);
+    color: var(--white);
+    padding: 1rem 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Navigation Menu */
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: var(--white);
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Main Content */
+main {
+    padding: 2rem 1rem;
+}
+
+.flash-messages {
+    margin-bottom: 1rem;
+}
+
+.flash-messages .alert {
+    margin: 0.5rem 0;
+    padding: 0.75rem 1.25rem;
+    border-radius: 0.25rem;
+}
+
+.flash-messages .alert-success {
+    background-color: var(--success-color);
+    color: var(--white);
+}
+
+.flash-messages .alert-danger {
+    background-color: var(--danger-color);
+    color: var(--white);
+}
+
+/* Footer */
+footer {
+    background-color: var(--footer-bg);
+    color: var(--white);
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.875rem;
+}
+
+/* Buttons */
+button,
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    color: var(--white);
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+button:hover,
+.btn:hover {
+    background-color: var(--success-color);
+    border-color: var(--success-color);
+}
+
+button:focus,
+.btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
+}
+
+/* Form Elements */
+input,
+select,
+textarea {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 5px rgba(40, 167, 69, 0.5);
+    outline: none;
+}
+
+/* Utility Classes */
+.text-center {
+    text-align: center;
+}
+
+.mt-1 {
+    margin-top: 0.25rem;
+}
+
+.mt-2 {
+    margin-top: 0.5rem;
+}
+
+.mt-3 {
+    margin-top: 1rem;
+}
+
+.mb-1 {
+    margin-bottom: 0.25rem;
+}
+
+.mb-2 {
+    margin-bottom: 0.5rem;
+}
+
+.mb-3 {
+    margin-bottom: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .container {
+        padding: 0.5rem;
+    }
+
+    /* Make the body take up full height */
+html, body {
+    height: 100%; /* Ensures the body takes up the full height of the viewport */
+    margin: 0; /* Removes default margin for proper alignment */
+    display: flex;
+    flex-direction: column; /* Flexbox layout to stack header, main, and footer */
+}
+
+/* Main container should expand to fill remaining space */
+main {
+    flex: 1; /* Allows the main content to grow and fill available space */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers content vertically */
+    align-items: center; /* Centers content horizontally */
+}
+
+/* Footer Styling */
+footer {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    text-align: center; /* Center-align the text */
+    padding: 1rem; /* Padding for spacing */
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+}
+
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Donations</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/donor_view_donations.css') }}">
+</head>
+<body class="d-flex flex-column min-vh-100">
+    <!-- Header -->
+    <header class="bg-success text-white py-3">
+        <div class="container">
+            <h1 class="m-0 text-center">My Donations</h1>
+        </div>
+    </header>
+    
+    <!-- Main Content -->
+    <main class="container my-4 flex-grow-1">
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped">
+                <thead class="table-success">
+                    <tr>
+                        <th>Donation ID</th>
+                        <th>Item</th>
+                        <th>Category</th>
+                        <th>Expiration Date</th>
+                        <th>Delivery Method</th>
+                        <th>Location</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for donation in donations %}
+                    <tr>
+                        <td>{{ donation.donation_id }}</td>
+                        <td>{{ donation.food_item_name }}</td>
+                        <td>{{ donation.category_name }}</td>
+                        <td>{{ donation.expiration_date }}</td>
+                        <td>{{ donation.delivery_method }}</td>
+                        <td>{{ donation.delivery_location }}</td>
+                        <td>{{ donation.status }}</td>
+                        <td>
+                            {% if donation.status == "Pending" %}
+                            <form method="POST" action="{{ url_for('delete_donation') }}">
+                                <input type="hidden" name="donation_id" value="{{ donation.donation_id }}">
+                                <button type="submit" class="btn btn-danger btn-sm delete-btn">Delete</button>
+                            </form>
+                            {% else %}
+                            <span class="text-muted">Not Allowed</span>
+                            {% endif %}
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        <a href="{{ url_for('donor_menu') }}" class="btn btn-secondary mt-3">Back to Menu</a>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-success text-white text-center py-3 mt-auto">
+        <p>&copy; 2024 Food Donation Management. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

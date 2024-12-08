@@ -1,0 +1,101 @@
+/* Donor Container Styling */
+.donor-container {
+    max-width: 400px; /* Match the width of the login container */
+    margin: 50px auto; /* Centers the donor container */
+    padding: 20px; /* Inner padding for the container */
+    background-color: white; /* Background color of the donor container */
+    border-radius: 8px; /* Rounded corners for the container */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for the container */
+}
+
+/* Donor Menu Header Styling */
+.donor-container h2 {
+    margin-bottom: 1.5rem; /* Consistent spacing below the header */
+    text-align: center; /* Center-align the text */
+    font-size: 1.8rem; /* Header font size */
+    color: #333; /* Header text color */
+}
+
+/* Menu List Styling */
+.menu-list {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    text-align: center;
+}
+
+/* Menu Item Styling */
+.menu-list li {
+    margin: 15px 0; /* Spacing between menu items */
+}
+
+/* Menu Link Styling */
+.menu-list a {
+    text-decoration: none; /* Remove underline from links */
+    color: #4CAF50; /* Link color */
+    font-weight: bold; /* Bold text for links */
+    font-size: 1rem; /* Adjust font size to match login page */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+/* Hover Effect for Links */
+.menu-list a:hover {
+    color: #45a049; /* Change color on hover */
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .donor-container {
+        width: 90%; /* Adjust container width for smaller screens */
+        padding: 15px; /* Reduce padding for smaller screens */
+        box-shadow: none; /* Remove shadow for smaller screens */
+    }
+
+    .menu-list a {
+        font-size: 0.9rem; /* Adjust font size for smaller screens */
+    }
+}
+
+/* Welcome Message Styling */
+.welcome-message {
+    font-size: 1.2rem; /* Adjust font size */
+    font-weight: bold; /* Bold text */
+    color: #4CAF50; /* Green color matching the theme */
+    margin-bottom: 10px; /* Spacing below the message */
+    text-align: center; /* Center-align the text */
+}
+
+/* Flexbox Layout for Footer at Bottom */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the body is at least the full viewport height */
+    margin: 0; /* Remove default body margin */
+}
+
+main {
+    flex-grow: 1; /* Allow the main content to grow and push the footer down */
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 0; /* Remove additional padding */
+    background: none; /* Remove extra background color */
+    box-shadow: none; /* Remove shadow from main container */
+}
+
+/* Footer Styling */
+footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    height: 50px; /* Fixed height for the footer */
+    padding: 0; /* Remove extra padding */
+    font-size: 0.8rem; /* Reduce font size */
+    display: flex;
+    align-items: center; /* Vertically center the text */
+    justify-content: center; /* Horizontally center the text */
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
